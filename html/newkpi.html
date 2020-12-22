@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>KPI Dashboard</title>
+	<meta name="description" content="KPI Dashboard">
+	<meta name="author" content="Andre Becker">
+
+	<link rel="stylesheet" href="../css/styles.css?v=1.0">
+
+</head>
+
+<body>
+	<nav>
+		<a href="/newKPI" class="active">neuer Eintrag</a>
+		<a href="/html/">Dashboard</a> |
+		<a href="/js/">Einstellungen</a> |
+		<a href="/python/">Logout</a>
+	</nav>
+	
+	<div class="title">
+		<h1>Neuer Eintrag</h1>
+	</div>
+	
+	<form action="newKPI2.html" method="get">
+	
+		<p>
+			<label for="KPItitle">KPI Titel:</label>
+			<input id="KPItitle" type="text" placeholder="titel"/>
+		</p>
+		
+		<p>
+		<label for="category">Kategorie:</label>
+		<input list="categories" name="category" id="category">
+		<datalist id="categories">
+			<option value="Betriebskennzahlen">
+			<option value="Logistik">
+			<option value="Nachhaltigkeit">
+		</datalist>
+		</p>
+		
+		<p>
+			Ich möchte bei unterschreiten der Mindestwerte informiert werden:
+			<input type="checkbox" name="cbAlarm" value="eMail"/>per E-Mail
+			<input type="checkbox" name="cbAlarm" value="push"/>per Push-Nachricht
+		</p>
+	
+		<input type="submit" value="Anlegen" class="btn">
+	</form>
+	
+	<footer>
+		<a href="/html/">Impressum</a> |
+		<a href="/css/">Datenschutzerklärung</a> |
+		<a href="/js/">Kontakt</a> |
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="../js/scripts.js"></script>
+</body>
+</html>

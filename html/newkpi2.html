@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>KPI Dashboard</title>
+	<meta name="description" content="KPI Dashboard">
+	<meta name="author" content="Andre Becker">
+
+	<link rel="stylesheet" href="../css/styles.css?v=1.0">
+
+</head>
+
+<body>
+	<nav>
+		<a href="/newKPI" class="active">neuer Eintrag</a>
+		<a href="/html/">Dashboard</a> |
+		<a href="/js/">Einstellungen</a> |
+		<a href="/python/">Logout</a>
+	</nav>
+	
+	<div class="title">
+		<h1>Daten des neuen Eintrages</h1>
+	</div>
+	
+	<form action="newKPI2.html" method="get">
+	
+		<p>
+			<label for="diagrammitle">Diagrammtitel:</label>
+			<input id="diagrammitle" type="text" placeholder="Diagrammtitel"/>
+		</p>
+		
+		<table border="1">
+			<tr><td><input tyoe="text" placeholder="X-Wert 1"/></td><td><input tyoe="text" placeholder="X-Wert 2"/></td><td><input tyoe="text" placeholder="X-Wert 3"/></td><td><input tyoe="text" placeholder="X-Wert 4"/></td><td><input tyoe="text" placeholder="X-Wert 5"/></td></tr>
+			<tr><td><input tyoe="text" placeholder="Y-Wert 1"/></td><td><input tyoe="text" placeholder="Y-Wert 2"/></td><td><input tyoe="text" placeholder="Y-Wert 3"/></td><td><input tyoe="text" placeholder="Y-Wert 4"/></td><td><input tyoe="text" placeholder="Y-Wert 5"/></td></tr>
+		</table>
+		
+		<p>
+			<label for="preferredDiagrammtype">bevorzugter Diagrammtyp:</label>
+			<select id="preferredDiagrammtype">
+				<option value="bar">Balken</option>
+				<option value="line">Kurve</option>
+				<option value="pie">Kuchen</option>
+			</select>
+		</p>
+		
+		<p>
+			<button id="additionalDataBtn" name="additionalDataBtn" type="button" class="btn">Weitere Informationen hinzufügen</button>
+		</p>
+		
+		<div id="additionalData">
+			<p>
+				<label for="diagrammitle2">Diagrammtitel:</label>
+				<input id="diagrammitle2" type="text" placeholder="Diagrammtitel"/>
+			</p>
+			
+			<table border="1">
+				<tr><td><input tyoe="text" placeholder="X-Wert 1"/></td><td><input tyoe="text" placeholder="X-Wert 2"/></td><td><input tyoe="text" placeholder="X-Wert 3"/></td><td><input tyoe="text" placeholder="X-Wert 4"/></td><td><input tyoe="text" placeholder="X-Wert 5"/></td></tr>
+				<tr><td><input tyoe="text" placeholder="Y-Wert 1"/></td><td><input tyoe="text" placeholder="Y-Wert 2"/></td><td><input tyoe="text" placeholder="Y-Wert 3"/></td><td><input tyoe="text" placeholder="Y-Wert 4"/></td><td><input tyoe="text" placeholder="Y-Wert 5"/></td></tr>
+			</table>
+			
+			<p>
+				<label for="preferredDiagrammtype2">bevorzugter Diagrammtyp:</label>
+				<select id="preferredDiagrammtype2">
+					<option value="bar">Balken</option>
+					<option value="line">Kurve</option>
+					<option value="pie">Kuchen</option>
+				</select>
+			</p>
+		</div>
+		
+		<input type="submit" value="Anlegen" class="btn">
+		
+	</form>
+	
+	<br>
+	
+	<footer>
+		<a href="/html/">Impressum</a> |
+		<a href="/css/">Datenschutzerklärung</a> |
+		<a href="/js/">Kontakt</a> |
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="../js/scripts2.js"></script>
+</body>
+</html>

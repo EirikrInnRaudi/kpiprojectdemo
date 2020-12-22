@@ -1,0 +1,104 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>KPI Dashboard</title>
+	<meta name="description" content="KPI Dashboard">
+	<meta name="author" content="Andre Becker">
+
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+	<nav>
+		<a href="html/newKPI.html">neuer Eintrag</a>
+		<a href="/html/" class="active">Dashboard</a> |
+		<a href="/js/">Einstellungen</a> |
+		<a href="/python/">Logout</a>
+	</nav>
+	
+	<div id="sidebar">
+		<a href="/html/" id="economicKPIs">Betriebskennzahlen</a>
+		<a href="/html/" class="economicKPIs">Umsatz</a>
+		<a href="/html/" class="economicKPIs">Gewinn</a>
+		<a href="/html/" class="economicKPIs">Ausgaben</a>
+		<hr>
+		<a href="/html/" id="logisticKPIs">Logistik</a>
+		<a href="/html/" class="logisticKPIs">Fahrten pro Tag</a>
+		<a href="/html/" class="logisticKPIs">gefahrene Strecke</a>
+		<a href="/html/" class="logisticKPIs">Retourenquote</a>
+		<hr>
+		<a href="/html/" id="sustainabilityKPIs">Nachhaltigkeit</a>
+		<a href="/html/" class="sustainabilityKPIs">Kraftstoffverbrauch</a>
+		<a href="/html/" class="sustainabilityKPIs">Schadstoffemissionen</a>
+		<a href="/html/" class="sustainabilityKPIs">Transportschäden</a>
+		<hr>
+	</div>
+	
+	<div class="title" id="kpititle">
+		<h1><div id="title">Kraftstofverbrauch</div><div id="timestamp"></div></h1>
+	</div>
+	
+	<div id="kpimain">
+		<select>
+			<option>Filtern</option>
+		</select>
+		<select id="diagrammtype">
+			<option value="bar">Diagrammtyp ändern</option>
+			<option value="line">Kurve</option>
+			<option value="bar">Balken</option>
+			<option value="pie">Kuchen</option>
+		</select>
+		<canvas id="myChart" width="400" height="400"></canvas>
+	</div>
+	
+	<div id="kpimain2">
+		<select>
+			<option>Filtern</option>
+		</select>
+		<select id="diagrammtype2">
+			<option value="bar">Diagrammtyp ändern</option>
+			<option value="line">Kurve</option>
+			<option value="bar">Balken</option>
+			<option value="pie">Kuchen</option>
+		</select>
+		<canvas id="myChart2" width="400" height="400"></canvas>
+	</div>
+	
+	<div id="kpimain3">
+		<select>
+			<option>Filtern</option>
+		</select>
+		<select id="diagrammtype3">
+			<option value="bar">Diagrammtyp ändern</option>
+			<option value="line">Kurve</option>
+			<option value="bar">Balken</option>
+			<option value="pie">Kuchen</option>
+		</select>
+		<canvas id="myChart3" width="400" height="400"></canvas>
+	</div>
+	
+	<div id="explanations">
+		<p>
+			<h2>Legende:</h2>
+			DE-Nord umfasst Niedersachsen, Hamburg, Bremen und Schlewwig-Holstein<br>
+			DE-West umfasst Nordrhein-Westfalen, Rheinland-Pfalz, Saarland und Hessen<br>
+			DE-Süd umfasst Baden-Württemberg und Bayern<br>
+			DE-Ost umfasst Mecklenburg-Vorpommern, Brandenburg, Berlin, Sachsen, Sachsen-Anhalt und Thüringen<br>
+		</p>
+	</div>
+	<br>
+	
+	<footer>
+		<a href="/html/">Impressum</a> |
+		<a href="/css/">Datenschutzerklärung</a> |
+		<a href="/js/">Kontakt</a> |
+	</footer>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

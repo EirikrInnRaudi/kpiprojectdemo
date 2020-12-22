@@ -1,0 +1,92 @@
+nav {
+	background-color: #000;
+	height: 1.9vw;
+}
+
+nav a {
+	color: #fff;
+    font-weight: bold;
+    padding: 1%;
+	margin: 8.39%;
+	text-decoration: none;
+	background-color: #000;
+	padding: 1%;
+}
+
+footer {
+	background-color: #333135;
+	height: 1.9vw;
+}
+
+footer a {
+	color: #fff;
+    font-weight: bold;
+    padding: 1%;
+	margin: 11.85%;
+	text-decoration: none;
+}
+
+.active {
+	background-color: #5482d6;
+}
+
+body {
+	margin: 0 !important;
+    padding: 0 !important;
+}
+
+.title {
+    background-color: #545454;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.05%;
+}
+
+#kpimain, #kpimain2 {
+	float: left;
+}
+
+canvas {
+	width: 400px;
+	height: 400px;
+}
+
+#sidebar {
+	float: left;
+	background: #797979;
+    width: 25%;
+    /*height: 27vw;*/
+	padding: 0.25% 0;
+	text-align: center;
+    font-weight: bold;
+}
+
+#sidebar a {
+	display: block;
+    color: #fff;
+    background-color: #797979;
+	text-decoration: none;
+}
+
+#sidebar .economicKPIs, #sidebar .logisticKPIs, #sidebar .sustainabilityKPIs {
+	background-color: #404344;
+	display: none;
+}
+
+#explanations, .title {
+	text-align: center;
+}
+
+#additionalData {
+	display: none;
+}
+
+.btn {
+	background-color: green;
+	color: #fff;
+	width: 25%;
+    border-radius: 1%;
+    padding: 1%;
+	font-weight: bold;
+}
